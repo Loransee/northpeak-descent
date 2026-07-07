@@ -1,6 +1,6 @@
 # Northpeak Descent
 
-**Community threat hunt // Cyber Range — designed and built by Dogukan Oruc**
+**Community threat hunt // Cyber Range — designed and built by Dogukan Oruc during his internship at Log(N) Pacific**
 
 ![Status](https://img.shields.io/badge/status-live-ef4444)
 ![Difficulty](https://img.shields.io/badge/difficulty-intermediate-ef9f27)
@@ -9,7 +9,7 @@
 
 > *An operator held the front door open while everyone watched the noise.*
 
-**Play it live:** [hunt.lognpacific.com/hunt-10-brief](https://hunt.lognpacific.com/hunt-10-brief)
+**Play it live:** [hunt.lognpacific.com/hunt-10-brief](https://hunt.lognpacific.com/hunt-10-brief) · *Cyber Range membership required*
 
 ---
 
@@ -52,23 +52,19 @@ A few things I built into this hunt deliberately:
 
 ## What's in this repo
 
-- **`index.html`** — a standalone, self-contained copy of the operation brief exactly as it appears on the platform (original styling preserved, all platform code removed). Viewable via GitHub Pages.
-- **`assets/`** — drop the hunt cover image here as `northpeak-descent-cover.png` (save it from the live brief page). The page degrades gracefully if it's missing.
+- **`index.html`** — a standalone, self-contained copy of the operation brief exactly as it appears on the platform (original styling preserved, all platform code removed).
+- **`assets/`** — cover art for the brief.
 
-**Not** in this repo: flags, answers, KQL solutions, or the underlying attack emulation. The hunt is live and stays playable — only the public-facing brief is published here. A full walkthrough/writeup may be added after the hunt closes.
+**Not** in this repo: flags, answers, KQL solutions, or the underlying attack emulation. The hunt is live and stays playable — only the public-facing brief is published here.
 
-## Viewing the brief
+## View the brief
 
-Once pushed, enable GitHub Pages (**Settings → Pages → Deploy from a branch → `main` / root**) and the brief will be served at:
+**Live page:** [loransee.github.io/Northpeak-Descent](https://loransee.github.io/Northpeak-Descent/) *(hosted with GitHub Pages)*
 
-```
-https://<your-username>.github.io/northpeak-descent/
-```
-
-Or just open `index.html` locally in a browser — it has no dependencies beyond Google Fonts.
+Or open `index.html` locally in any browser — it has no dependencies beyond Google Fonts.
 
 ## Author
 
 **Dogukan Oruc** — threat hunt design, attack emulation, telemetry engineering, and brief.
 
-Built for the Cyber Range community threat hunt series at [hunt.lognpacific.com](https://hunt.lognpacific.com).
+Built during an internship at **Log(N) Pacific** for **Josh Madakor**'s Cyber Range community threat hunt series, live at [hunt.lognpacific.com](https://hunt.lognpacific.com).
