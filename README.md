@@ -50,12 +50,22 @@ A few things I built into this hunt deliberately:
 - **Blind spots as signal.** Part of the C2 channel never appears in network telemetry. The trace it leaves at the point of launch — and the blindness of one console — is the finding.
 - **Human vs. machine.** The operator's hands-on-keyboard activity is buried in routine estate automation; separating the two is a core skill the hunt exercises.
 
+## Build log & walkthrough
+
+Two long-form companion documents go beyond the brief. Both are meant to be read **after you've played** — they contain spoilers and full solutions, so hold off if you still want to work the hunt cold.
+
+- **[How I built it → `BUILD.md`](BUILD.md)** — the full build story: designing the scenario, emulating the intrusion on live Sentinel + MDE, and validating every flag against real telemetry. It walks through the design principles behind the hunt, the range and estate, the DRIFTWOOD / NorthpeakSync scenario, a phase-by-phase build log with the exact (benign) emulation commands, the telemetry quirks that fought back and how they were solved, the design pivot where the evidence overruled the intended narrative, and a private answer key. Written for anyone who wants to author their own threat hunt on a real telemetry stack.
+
+- **[Walkthrough → `WALKTHROUGH.md`](WALKTHROUGH.md)** — the full solve guide. *Spoiler warning: this is the complete solution.* A phase-by-phase walkthrough of all 18 flags — what each one asks, how to reason about it, the exact KQL that recovers the answer, and the value that scored. Every finding was pulled from live MDE telemetry in the `law-cyber-range` workspace. Read the brief and work the hunt first; open this only when you want the answers.
+
 ## What's in this repo
 
 - **`index.html`** — a standalone, self-contained copy of the operation brief exactly as it appears on the platform (original styling preserved, all platform code removed).
+- **[`BUILD.md`](BUILD.md)** — the full build log: how the hunt was designed, emulated, and validated, plus a private answer key. Contains spoilers.
+- **[`WALKTHROUGH.md`](WALKTHROUGH.md)** — a phase-by-phase solve guide with the exact KQL for all 18 flags. Full solutions.
 - **`assets/`** — cover art for the brief.
 
-**Not** in this repo: flags, answers, KQL solutions, or the underlying attack emulation. The hunt is live and stays playable — only the public-facing brief is published here.
+The live hunt on the platform ships without flags or answers embedded, so it stays playable there. `BUILD.md` and `WALKTHROUGH.md` do include the emulation details and full solutions — they're meant for reading once you've played, or once the hunt has closed.
 
 ## View the brief
 
